@@ -32,5 +32,5 @@ public class OrderFormPayment {
 	public WebElement getOrderBtn() {
 		return driver.findElement(orderBtn);
 	}
-	
+	//added
 }
