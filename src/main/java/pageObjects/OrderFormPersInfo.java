@@ -12,7 +12,7 @@ public class OrderFormPersInfo {
 	By genderMrs = By.cssSelector("label:nth-of-type(2) > .custom-radio > input[name='id_gender']");
 	By firstNameField = By.cssSelector("input[name='firstname']");
 	By lastNameField = By.cssSelector("input[name='lastname']");
-//depricated:	By emailField = By.cssSelector("form#customer-form > section input[name='email']");
+	//depricated:	By emailField = By.cssSelector("form#customer-form > section input[name='email']");
 	By emailField = By.cssSelector("input#field-email"); //ADDDED 2024-03-15
 	By passwordField = By.cssSelector("form#customer-form > section input[name='password']");
 	By birthDateField = By.cssSelector("input[name='birthday']");

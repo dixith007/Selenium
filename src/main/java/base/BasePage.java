@@ -46,16 +46,18 @@ public class BasePage {
 		}
 
 		driver.manage().window().maximize();
-	    Thread.sleep(10000);
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
 
 		return driver;
 	}
 	
-	public void waitForElementToBeVisible(By locator, Duration timeoutInSeconds) {
-	    WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-	}
+//	public void waitForElementToBeVisible(By locator, Duration timeoutInSeconds) {
+//	    WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
+//	    wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+//	}
+
 
 	public String getUrl() throws IOException {
 		url = prop.getProperty("url");
